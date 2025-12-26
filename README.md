@@ -1,5 +1,4 @@
-This is the source code for Prof. Jakob Eriksson's personal webpage, viewable at http://www.cs.uic.edu/~jakob. 
-Feel free to fork this repo to make your own UIC-themed webpage. 
+This is the source code for the cs426 website.
 
 To use it, first install node. On a mac, that would be 
 `brew install node`. On linux, `apt-get install nodejs npm`. 
