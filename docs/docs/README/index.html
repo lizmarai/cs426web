@@ -79,7 +79,7 @@
     <meta charset="UTF-8"/>
     <meta http-equiv="x-ua-compatible" content="ie=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, viewport-fit=cover"/>
-    <link rel="stylesheet" href="../style.css?v=1762339135327" type="text/css"/>
+    <link rel="stylesheet" href="../style.css" type="text/css"/>
   </head>
   <body class="bg-uicblue">
     <div class="bg-uicblue grid place-items-center">
@@ -142,8 +142,83 @@
           </div>
 
         <div id="content" class="text-justify mx-8 text-base">      
-          <p>This is the source code for Prof. Jakob Eriksson's personal webpage, viewable at http://www.cs.uic.edu/~jakob.
-Feel free to fork this repo to make your own UIC-themed webpage.</p>
+          <p>STEP 1. To initialize a github website with your website code:</p>
+<p>First, make sure the machine you are working on has the correct github sshkey: ssh-keygen cd .ssh ls less id_rsa.pub then paste into this file the github sshkey for your github account</p>
+<p>Then using the github website make a new repository/project under github and land on the Quick setup with SSH instructions.</p>
+<p>On the local machine make a new directory foobar/ and cd to it.</p>
+<p>git clone git@github.com:lizmarai/cs426web.git (or whatever the pathway listed under Quick setup says under ssh).</p>
+<p>cp -R all files to foobar ( cp -R ../Downloads/cs426_webpage-main/* cs426/)</p>
+<p>cd cs426</p>
+<p>cp -R _site docs</p>
+<p>git add -f *</p>
+<p>git commit -m &quot;first&quot;</p>
+<p>git push</p>
+<p>STEP 2: Make the website visible Go to Settings for that new project, Pages, then Deploy from Branch, then main/ /docs</p>
+<p>STEP 3: Modify the website git config pull.rebase false</p>
+<p>git pull</p>
+<p>; check the website builds correctly in your terminal: npm start &amp; (the version displayed will be based on the _site files that you build through this command)</p>
+<p>copy the _site files to the docs/ folder then git add -f *, git commit, and git push</p>
+<p>This is the source code for Prof. Jakob Eriksson's personal webpage, viewable at http://www.cs.uic.edu/~jakob. Feel free to fork this repo to make your own UIC-themed webpage.</p>
+<p>To use it, first install node. On a mac, that would be brew install node. On linux, apt-get install nodejs npm.</p>
+<p>Then install the static site generator 11ty and the CSS framework tailwind. npm install -D @11ty/eleventy tailwindcss@latest</p>
+<p>To use this as a template, start by updatin the settings in _data/defaults.json' to reflect your name, title and a suitable portrait. Delete the contents of 'photos/' and add some of your own. Use landscape oriented photos of high resolution, and with your face fairly prominent and centered. Then, simply edit home.md, projects.mdandnews.md` with your own content, and you're good to go.</p>
+<p>To try it out, run npm start in the main folder, and open your website in a browser using the URL localhost:8080. The Makefile contains a handy target for uploading your site to your Computer Science department WWW folder. Works for me, but your YMMV as that's a pretty outdated system.</p>
+<p>CS529 Website – Updated Instructions (For future reference)
+This website is built with Eleventy (11ty) and Tailwind CSS and is deployed using GitHub Pages. The live site is served from the docs/ folder.</p>
+<p>Requirements
+Node.js 18 (LTS) is required. Using nvm is recommended.</p>
+<p>nvm install v20.17.0
+nvm use v20.17.0
+One-time setup (first time on a machine)
+git clone https://github.com/lizmarai/cs529web.git
+cd cs529web
+npm install
+How to update the website</p>
+<ol>
+<li>Pull the latest changes
+git pull</li>
+<li>Edit content
+Edit Markdown files such as gallery.md, home.md, or projects.md.</li>
+</ol>
+<p>Add images to the _site/photos/ folder.</p>
+<p>When referencing images, use absolute paths like: src=&quot;../photos/fall-2025/example.png&quot;</p>
+<ol start="3">
+<li>Preview locally (recommended)
+npm start</li>
+</ol>
+<p>Open a browser and go to:</p>
+<p>http://localhost:8081</p>
+<p>Stop the server with Ctrl+C when finished.</p>
+<ol start="4">
+<li>Build the site
+npm run build</li>
+</ol>
+<p>This generates the website into the _site/ folder.</p>
+<ol start="5">
+<li>Publish to GitHub Pages
+Copy the generated files and folder from _site/ into the docs/ folder:</li>
+</ol>
+<p>cp -R _site/. docs/</p>
+<ol start="6">
+<li>Commit and push changes
+git add -A
+git commit -m &quot;Update website&quot;
+git push
+View the live site
+After about 30–60 seconds, the website will be available at:</li>
+</ol>
+<p>https://lizmarai.github.io/cs426web/</p>
+<p>Quick checklist
+git pull
+(edit markdown files and photos)
+npm run build
+cp -R _site/* docs/
+git add -A
+git commit -m &quot;Update&quot;
+git push
+Do NOT edit the _site/ folder directly except for adding images or videos. It is always regenerated.</p>
+<hr>
+<p>This is the source code for the cs426 website.</p>
 <p>To use it, first install node. On a mac, that would be
 <code>brew install node</code>. On linux, <code>apt-get install nodejs npm</code>.</p>
 <p>Then install the static site generator 11ty and the CSS framework tailwind.

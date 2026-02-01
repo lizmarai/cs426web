@@ -74,7 +74,10 @@
 <p>First, make sure the machine you are working on has the correct github sshkey: ssh-keygen cd .ssh ls less id_rsa.pub then paste into this file the github sshkey for your github account</p>
 <p>Then using the github website make a new repository/project under github and land on the Quick setup with SSH instructions.</p>
 <p>On the local machine make a new directory foobar/ and cd to it.</p>
-<p>git clone git@github.com:lizmarai/cs426web.git (or whatever the pathway listed under Quick setup says under ssh).</p>
+<p>git clone git@github.com:lizmarai/cs426web.git (or whatever the
+pathway listed under Quick setup says under ssh).</p>
+<p>To bypass future authentification issues:
+git remote set-url origin git@github.com:lizmarai/cs426web.git</p>
 <p>cp -R all files to foobar ( cp -R ../Downloads/cs426_webpage-main/* cs426/)</p>
 <p>cd cs426</p>
 <p>cp -R _site docs</p>

@@ -30,15 +30,15 @@ While there is a wealth of gaming books available, few enough resources are dedi
 # 3:: Staff
 Professor:
 - [Liz Marai](http://evl.uic.edu/marai)
-- Email:   gmarai AT uic.edu
-- Office Hours: Wed 12:40pm-2pm or by appointment.
+- Email:   gmarai AT uic.edu, CDLRC 5411
+- Office Hours: Mon 12:30pm-1pm or by appointment.
 
 
 
 Graduate Teaching Assistant:
-- Nafiul Nipu, ERF 2068.
-- Email: mnipu2 AT uic.edu
-- Office Hours: TBA.
+- Sanjana Srabanti, CDLRC 5412.
+- Email: ssraba2 AT uic.edu
+- Office Hours: See Piazza.
 
 
 # 4:: Course Grade, Assignments, and Final Project

@@ -6,7 +6,11 @@ Then using the github website make a new repository/project under github and lan
 
 On the local machine make a new directory foobar/ and cd to it.
 
-git clone git@github.com:lizmarai/cs426web.git (or whatever the pathway listed under Quick setup says under ssh).
+git clone git@github.com:lizmarai/cs426web.git (or whatever the
+pathway listed under Quick setup says under ssh).
+
+To bypass future authentification issues:
+git remote set-url origin git@github.com:lizmarai/cs426web.git
 
 cp -R all files to foobar ( cp -R ../Downloads/cs426_webpage-main/* cs426/)
 
