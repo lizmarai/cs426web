@@ -60,9 +60,9 @@ Edit Markdown files such as gallery.md, home.md, or projects.md.
 
 Add images to the _site/photos/ folder.
 
-When referencing images, use absolute paths like:
+When referencing images, use absolute paths like: src="../photos/fall-2025/example.png"
 
-<img src="../photos/fall-2025/example.png" />
+
 3. Preview locally (recommended)
 npm start
 
